@@ -106,7 +106,7 @@ struct GameView: View {
                             currentQuestion += 1
                             playSequence()
                         } else {
-                            goToMenu()
+                            currentQuestion += 1  // Just increment to trigger the FinalScoreView
                         }
                     }
                 }

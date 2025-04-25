@@ -46,7 +46,7 @@ struct ContentView: View {
         if index < 3 {
             currentState = .tutorial(index: index + 1)
         } else {
-            currentQuestionIndex = Int.random(in: 0..<QuestionData.allQuestions.count)
+            currentQuestionIndex = 0  // Always start with the first question
             currentState = .listenMusic(questionIndex: currentQuestionIndex)
         }
     }

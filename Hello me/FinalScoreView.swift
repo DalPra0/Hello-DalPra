@@ -6,10 +6,16 @@ struct FinalScoreView: View {
     
     var body: some View {
         ZStack {
+            
             Color.black.edgesIgnoringSafeArea(.all)
             
+            Image("wallpaperPontuacao")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            
             VStack(spacing: 30) {
-                Text("Pontuação Final")
+                Text("")
                     .font(.title)
                     .foregroundColor(.white)
                 
@@ -19,12 +25,12 @@ struct FinalScoreView: View {
                 
                 VStack(spacing: 20) {
                     Button("Menu Principal", action: goToMenu)
-                        .buttonStyle(GameButtonStyle())
+                        .buttonStyle(GameButtonStyle(backgroundColor: .yellow))
                     
                     Button("Sair") {
                         exit(0)
                     }
-                    .buttonStyle(GameButtonStyle(backgroundColor: .red))
+                    .buttonStyle(GameButtonStyle(backgroundColor: .yellow))
                 }
             }
         }

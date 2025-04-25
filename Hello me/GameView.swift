@@ -67,7 +67,7 @@ struct GameView: View {
                     HStack(alignment: .top, spacing: 15) {
                         ForEach(0..<3, id: \.self) { i in
                             Text(QuestionData.allQuestions[currentQuestion].answerText[i])
-                                .font(.footnote)
+                                .font(.headline)
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .frame(maxWidth: .infinity)
@@ -106,7 +106,7 @@ struct GameView: View {
                             currentQuestion += 1
                             playSequence()
                         } else {
-                            currentQuestion += 1  // Just increment to trigger the FinalScoreView
+                            currentQuestion += 1
                         }
                     }
                 }

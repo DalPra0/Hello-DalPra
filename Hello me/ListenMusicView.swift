@@ -13,7 +13,6 @@ struct ListenMusicView: View {
     
     var body: some View {
         ZStack {
-            // Wallpaper específico para esta tela
             Image("wallpaperMusica")
                 .resizable()
                 .scaledToFill()
@@ -26,7 +25,6 @@ struct ListenMusicView: View {
                     .shadow(color: .black, radius: 3)
                     .padding(.bottom, 80)
                 
-                // Botão de play/stop
                 Button(action: toggleSequence) {
                     Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
                         .font(.system(size: 70))
@@ -35,7 +33,6 @@ struct ListenMusicView: View {
                         .background(Circle().fill(Color.yellow.opacity(0.9)))
                 }
                 
-                // Botão para ir para o jogo
                 Button("Responder") {
                     stopSequence()
                     goToGame()
@@ -44,11 +41,10 @@ struct ListenMusicView: View {
                 .padding(.top, 40)
             }
         }
-        .onAppear { playSequence() } // Toca automaticamente ao abrir
-        .onDisappear { stopSequence() } // Para ao sair
+        .onAppear { playSequence() }
+        .onDisappear { stopSequence() }
     }
     
-    // MARK: - Controle de Áudio
     private func toggleSequence() {
         isPlaying.toggle()
         isPlaying ? playSequence() : stopSequence()
@@ -85,7 +81,6 @@ struct ListenMusicView: View {
 
 }
 
-// Pré-visualização
 struct ListenMusicView_Previews: PreviewProvider {
     static var previews: some View {
         ListenMusicView(

@@ -7,7 +7,7 @@ struct MyGameApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(audioManager) // Adicione este modificador
+                .environmentObject(audioManager)
         }
     }
     

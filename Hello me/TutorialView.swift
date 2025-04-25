@@ -23,8 +23,8 @@ struct TutorialView: View {
                 }
                 
                 HStack(spacing: 0) {
-                    imageBox(
-                        imageName: "TutorialBotaoRepetirMusica",
+                    videoBox(
+                        videoName: "TutorialClicarTambor",
                         text: "Clique neste botão para reouvir a musica"
                     )
                     

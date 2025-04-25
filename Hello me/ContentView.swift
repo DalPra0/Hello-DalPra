@@ -41,12 +41,11 @@ struct ContentView: View {
         }
     }
     
-    // MARK: - Funções de Navegação
     private func handleTutorial(index: Int) {
         if index < 3 {
             currentState = .tutorial(index: index + 1)
         } else {
-            currentQuestionIndex = 0  // Always start with the first question
+            currentQuestionIndex = 0 
             currentState = .listenMusic(questionIndex: currentQuestionIndex)
         }
     }
@@ -56,7 +55,6 @@ struct ContentView: View {
         resetGame = true
         score = 0
 
-        // 🔁 Recria as perguntas com novos índices corretos
         QuestionData.allQuestions = QuestionData.generateQuestions()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {

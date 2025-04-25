@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct Question {
-    let title: String                 // A pergunta em texto
-    let answerText: [String]         // Texto das opções (A, B, C)
-    let allVariations: [[Color]]     // As 3 opções de resposta (cores)
-    let correctIndex: Int            // Índice da resposta correta
+    let title: String
+    let answerText: [String]
+    let allVariations: [[Color]]
+    let correctIndex: Int           
 
     var correctSequence: [Color] {
         allVariations[correctIndex]

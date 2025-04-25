@@ -37,31 +37,31 @@ struct QuestionData {
                 correctIndex: 2
             ),
             Question(
-                title: "Pergunta 3: Placeholder para você editar depois.",
+                title: "Pergunta 3: Do que eu vim fantasiado no primeiro dia?",
                 answerText: [
-                    "Opção A: Placeholder A",
-                    "Opção B: Placeholder B",
-                    "Opção C: Placeholder C"
+                    "Opção A: Ben 10",
+                    "Opção B: Rango",
+                    "Opção C: Jojo"
                 ],
                 allVariations: dummyVariations(),
                 correctIndex: 1
             ),
             Question(
-                title: "Pergunta 4: Outra questão de exemplo.",
+                title: "Pergunta 4: Sobre o que foi a minha primeira tatuagem?",
                 answerText: [
-                    "Opção A: Alternativa 1",
-                    "Opção B: Alternativa 2",
-                    "Opção C: Alternativa 3"
+                    "Opção A: Jojo",
+                    "Opção B: Animal",
+                    "Opção C: Persona 3"
                 ],
                 allVariations: dummyVariations(),
                 correctIndex: 0
             ),
             Question(
-                title: "Pergunta 5: Edite essa depois.",
+                title: "Pergunta 5: Qual o meu curso?",
                 answerText: [
-                    "Opção A: Texto A",
-                    "Opção B: Texto B",
-                    "Opção C: Texto C"
+                    "Opção A: Engenharia de software",
+                    "Opção B: Sistema de informacao",
+                    "Opção C: Ciencia da computacao"
                 ],
                 allVariations: dummyVariations(),
                 correctIndex: 2

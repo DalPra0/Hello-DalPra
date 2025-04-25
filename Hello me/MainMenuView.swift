@@ -5,11 +5,11 @@ struct MainMenuView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [.yellow, .purple]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
-                Text("Meu Jogo")
+                Text("Hello, DalPra")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .padding(.bottom, 50)

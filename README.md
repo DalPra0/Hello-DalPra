@@ -145,3 +145,11 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 - **Desenvolvedor**: [Seu Nome]
 - **E-mail**: [seu.email@exemplo.com]
 - **GitHub**: [seu-usuario](https://github.com/seu-usuario)
+
+
+
+```sql
+ create table teste (
+    pk int PRIMARY KEY
+)
+```
